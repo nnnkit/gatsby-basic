@@ -1,4 +1,4 @@
 import React from "react";
 import Layout from "../components/layout";
 
-export default () => <Layout>Hello Basic Gatsby</Layout>;
+export default () => <Layout>Hello About</Layout>;
