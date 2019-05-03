@@ -1,3 +1,6 @@
 module.exports = {
-  plugins: ["gatsby-plugin-emotion"]
+  siteMetadata: {
+    title: "Gatsby Blog"
+  },
+  plugins: ["gatsby-plugin-emotion", "gatsby-plugin-react-helmet"]
 };
