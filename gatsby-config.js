@@ -12,6 +12,13 @@ module.exports = {
           default: require.resolve("./src/components/layout.js")
         }
       }
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "posts", // name of the folder
+        path: "posts" // path of url
+      }
     }
   ]
 };
