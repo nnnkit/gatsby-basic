@@ -11,7 +11,7 @@ export default function usePostsData() {
             slug
             image {
               sharp: childImageSharp {
-                fluid(maxWidth: 100, maxHeight: 100) {
+                fluid(maxWidth: 200, maxHeight: 200) {
                   ...GatsbyImageSharpFluid_withWebp
                 }
               }

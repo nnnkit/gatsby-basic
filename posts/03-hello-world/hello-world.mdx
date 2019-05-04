@@ -1,5 +1,5 @@
 ---
-title: Third Post
+title: Upgrading to Gatsby v2
 slug: third-post
 author: Ankit
 image: ./images/hero.jpg
@@ -7,7 +7,13 @@ image: ./images/hero.jpg
 
 # Third Post
 
-Learning react, redux is something I am going to do this year.
+Gatsby has a great guide for upgrading from v1 to v2. This post describes how I upgraded this site from v1 to v2. If it reads almost identically to their official guide, it's because their guide is awesome. if it doesn't, their guide is still awesome.
+
+Before I got started, I created a new branch in git where all changed would live. This branch will get merged into the master branch after this post 💪.
+
+Remove `gatsby-link` from your `package.json`
+
+You no longer need the gatsby-link package. Everything that used to be there now lives in the main gatsby dependency. We will adjust our imports later to reflect this change.
 
 ## Code in react
 

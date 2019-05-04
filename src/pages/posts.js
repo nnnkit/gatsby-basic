@@ -25,11 +25,16 @@ export default () => {
             >
               <Image
                 css={css`
-                  width: 100px;
+                  width: 200px;
+                  border-radius: 10px;
+                  margin: 0 1rem 0 0;
                 `}
                 fluid={post.frontmatter.image.sharp.fluid}
               />
-              <p>{post.excerpt}</p>
+              <div>
+                <h2>{post.frontmatter.title}</h2>
+                <Link to={post.frontmatter.slug}>Read full post... 👐</Link>
+              </div>
             </Link>
           </li>
         ))}
