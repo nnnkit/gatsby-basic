@@ -9,6 +9,13 @@ export default function usePostsData() {
             title
             author
             slug
+            image {
+              sharp: childImageSharp {
+                fluid(maxWidth: 100, maxHeight: 100) {
+                  ...GatsbyImageSharpFluid_withWebp
+                }
+              }
+            }
           }
           excerpt
         }
