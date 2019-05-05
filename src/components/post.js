@@ -17,6 +17,7 @@ export const query = graphql`
     }
   }
 `;
+
 export default function Post({ data: { mdx: post } }) {
   return (
     <Layout>
