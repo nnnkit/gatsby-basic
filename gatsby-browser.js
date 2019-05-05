@@ -1,5 +1,6 @@
 import React from "react";
 import { MDXProvider } from "@mdx-js/react";
+import "./src/utils/nightOwl.css";
 
 const components = {
   pre: props => <div {...props} />,

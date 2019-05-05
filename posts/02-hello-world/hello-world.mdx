@@ -16,5 +16,13 @@ Learning react, redux is something I am going to do this year.
 ## Code in react
 
 ```js
-var name = "Hello";
+class Button extends React.Component {
+  state = {
+    color: this.props.color
+  };
+  render() {
+    const { color } = this.state; // 🔴 `color` is stale!
+    return <button className={"Button-" + color}>{this.props.children}</button>;
+  }
+}
 ```

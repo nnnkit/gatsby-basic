@@ -27,7 +27,7 @@ export default function Post({ data: { mdx: post } }) {
           font-size: 40px;
         `}
       >
-        👈
+        <span role="img">👈</span>
       </Link>
       <h1
         css={css`
