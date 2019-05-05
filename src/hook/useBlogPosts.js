@@ -11,7 +11,11 @@ export default function usePostsData() {
             slug
             image {
               sharp: childImageSharp {
-                fluid(maxWidth: 200, maxHeight: 200) {
+                fluid(
+                  maxWidth: 200
+                  maxHeight: 120
+                  duotone: { highlight: "#f00e2e", shadow: "#192550" }
+                ) {
                   ...GatsbyImageSharpFluid_tracedSVG
                 }
               }
