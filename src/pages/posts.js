@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
-import usePostsData from "../hook/use-postData";
+import usePostsData from "../hook/useBlogPosts";
 import { Link } from "gatsby";
 import Img from "gatsby-image";
 import { css } from "@emotion/core";
