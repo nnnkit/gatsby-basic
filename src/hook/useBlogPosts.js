@@ -2,7 +2,7 @@ import { graphql, useStaticQuery } from "gatsby";
 
 export default function usePostsData() {
   const data = useStaticQuery(graphql`
-    query {
+    query AllBlogPosts {
       allMdx {
         nodes {
           frontmatter {
@@ -12,7 +12,7 @@ export default function usePostsData() {
             image {
               sharp: childImageSharp {
                 fluid(maxWidth: 200, maxHeight: 200) {
-                  ...GatsbyImageSharpFluid_withWebp
+                  ...GatsbyImageSharpFluid_tracedSVG
                 }
               }
             }

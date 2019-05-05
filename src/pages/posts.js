@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../components/layout";
 import usePostsData from "../hook/use-postData";
 import { Link } from "gatsby";
-import Image from "gatsby-image";
+import Img from "gatsby-image";
 import { css } from "@emotion/core";
 
 export default () => {
@@ -23,13 +23,14 @@ export default () => {
                 margin: 1rem 1rem 0 0;
               `}
             >
-              <Image
+              <Img
                 css={css`
                   width: 200px;
                   border-radius: 10px;
                   margin: 0 1rem 0 0;
                 `}
                 fluid={post.frontmatter.image.sharp.fluid}
+                alt={post.frontmatter.title}
               />
               <div>
                 <h2>{post.frontmatter.title}</h2>
