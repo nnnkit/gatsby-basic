@@ -5,9 +5,9 @@ import { Link } from "gatsby";
 
 const NavLink = styled(Link)`
   color: #222;
-  font-size: 1rem;
+  font-size: 1.4rem;
   font-weight: ${({ fontWeight }) => fontWeight || "normal"};
-  line-height: 1;
+  line-height: 1.8;
   margin: 0 0.5rem 0 0;
   padding: 0.25rem;
   text-decoration: none;
@@ -26,7 +26,7 @@ const Header = () => (
       border-bottom: 1px solid #ddd;
       display: flex;
       justify-content: space-between;
-      padding: 0.5rem calc((100vw - 1020px - 0.5rem) / 2);
+      padding: 0.5rem calc((100vw - 800px - 0.5rem) / 2);
     `}
   >
     <NavLink to="/" fontWeight="bold">

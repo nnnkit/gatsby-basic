@@ -34,7 +34,9 @@ export default () => {
               />
               <div>
                 <h2>{post.frontmatter.title}</h2>
-                <Link to={post.frontmatter.slug}>Read full post... 👐</Link>
+                <Link to={post.frontmatter.slug}>
+                  Read full post... <span role="img">👐</span>
+                </Link>
               </div>
             </Link>
           </li>
